@@ -17,14 +17,14 @@
 
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="index.html">HOME</a>
+            <a class="navbar-brand js-scroll-trigger" href="index.php">HOME</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="about.html">ABOUT</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Register.html">REGISTER</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="login.html">LOGIN</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="search_recall.html">SEARCH</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="about.php">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Register.php">REGISTER</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="login.php">LOGIN</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="search_recall.php">SEARCH</a></li>
                 </ul>
             </div>
         </div>
@@ -37,6 +37,16 @@
                     <h1 class="text-uppercase text-white font-weight-bold">Login now!</h1>
                     <hr class="divider my-4" />
                 </div>
+                <form action="login.php" method="post">
+                <?php include('error.php') ?>
+                <div class="form-group">
+                    <label>Username:<sup>*</sup></label>
+                    <input type="text" name="username"class="form-control" value="<?php echo $username; ?>">
+                </div>
+                <div class="form-group">            
+                    <label>Password:<sup>*</sup></label>
+                    <input type="password" name="password" class="form-control" value="<?php echo $password; ?>">
+                </div>
                 <div class="col-lg-8 align-self-baseline">
                     <div class="card-body">
 
@@ -46,7 +56,7 @@
                     </div>
                     </form>
                 </div>
-                <p>Don't have an account? <a href="Register.html">Sign up now</a>.</p>
+                <p>Don't have an account? <a href="Register.php">Sign up now</a>.</p>
             </div>
         </div>
         </div>
