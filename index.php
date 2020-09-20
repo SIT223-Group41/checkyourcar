@@ -8,24 +8,38 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body background="Image/2560x1440-orange-web-solid-color-background.jpg" text="#FFFFFF">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="index.html">HOME</a>
+            <a class="navbar-brand js-scroll-trigger" href="index.php">HOME</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="about.html">ABOUT</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Register.html">REGISTER</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="login.html">LOGIN</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="search_recall.html">SEARCH</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="about.php">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Register.php">REGISTER</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="login.php">LOGIN</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="search_recall.php">SEARCH</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    <div class="wrapper">
+    <h2>Search</h2>
+    <form action="index.php" method="post">
+        <div class="form-group">            
+            <input type="text" name="input" class="form-control">
+            <button type="submit" class="btn btn-primary" name="search"><i class="fa fa-search"></i></button>
+
+        </div>
+
+        
+    </form>
+    
+</div>
     <header class="masthead">
         <div class="container h-100">
             <div class="row h-100 align-items-center justify-content-center text-center">
@@ -48,7 +62,7 @@
                     <h2 class="text-white mt-0">Text</h2>
                     <hr class="divider light my-4" />
                     <p class="text-white-50 mb-4">Text</p>
-                    <a class="btn btn-light btn-xl js-scroll-trigger" href="login.html">Get Started!</a>
+                    <a class="btn btn-light btn-xl js-scroll-trigger" href="login.php">Get Started!</a>
                 </div>
             </div>
         </div>
@@ -65,5 +79,8 @@
     </footer>
 
 </body>
+<?php include('functions.php') ?>
+
+<?php include('footer.php'); ?>
 
 </html>
