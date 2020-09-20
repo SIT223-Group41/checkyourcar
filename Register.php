@@ -20,10 +20,10 @@
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="about.html">ABOUT</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Register.html">REGISTER</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="login.html">LOGIN</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="search_recall.html">SEARCH</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="about.php">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Register.php">REGISTER</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="login.php">LOGIN</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="search_recall.php">SEARCH</a></li>
                 </ul>
             </div>
         </div>
@@ -35,6 +35,45 @@
                     <h1 class="text-uppercase text-white font-weight-bold">Register now!</h1>
                     <hr class="divider my-4" />
                 </div>
+                <form action="register.php" method="post">
+        <?php include('error.php') ?>
+        <div class="form-group">
+            <label>Username:<sup>*</sup></label>
+            <input type="text" name="username"class="form-control" value="<?php echo $username; ?>">
+        </div>
+        <div class="form-group">            
+            <label>Password:<sup>*</sup></label>
+            <input type="password" name="password_1" class="form-control" value="<?php echo $password_1; ?>">
+        </div>
+        <div class="form-group">            
+            <label>Confirm Password:<sup>*</sup></label>
+            <input type="password" name="password_2" class="form-control" >
+        </div>
+        <div class="form-group">
+            <label>Email:<sup>*</sup></label>
+            <input type="text" name="email"class="form-control" value="<?php echo $email; ?>">
+        </div>
+        <div class="form-group">
+            <label>Full Name:<sup>*</sup></label>
+            <input type="text" name="fullname"class="form-control" value="<?php echo $fullname; ?>">
+        </div>
+        <div class="form-group">
+            <label>Address:<sup>*</sup></label>
+            <input type="text" name="address"class="form-control" value="<?php echo $address; ?>">
+        </div>
+        <div class="form-group">
+            <label>Phone:<sup>*</sup></label>
+            <input type="text" name="phone"class="form-control" value="<?php echo $phone; ?>">
+        </div>
+        <div class="form-group">
+            <label>VIN:<sup>*</sup></label>
+            <input type="text" name="VIN"class="form-control" value="<?php echo $VIN; ?>">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary" name="register_user">Register</button>
+            <input type="reset" onclick="window,location='register.php'" class="btn btn-default" value="Reset">
+
+        </div>
                 <div class="col-lg-8 align-self-baseline">
                     <div class="card-body">
                     </div>
@@ -43,7 +82,7 @@
                     </div>
                     </form>
                 </div>
-                <p>Already have an account? <a href="login.html">Login here</a>.</p>
+                <p>Already have an account? <a href="login.php">Login here</a>.</p>
             </div>
         </div>
         </div>
