@@ -47,6 +47,7 @@
                     <label>Password:<sup>*</sup></label>
                     <input type="password" name="password" class="form-control" value="<?php echo $password; ?>">
                 </div>
+                <p>Don't have an account? <a href="Register.php">Sign up now</a>.</p>
                 <div class="col-lg-8 align-self-baseline">
                     <div class="card-body">
 
@@ -56,7 +57,7 @@
                     </div>
                     </form>
                 </div>
-                <p>Don't have an account? <a href="Register.php">Sign up now</a>.</p>
+                
             </div>
         </div>
         </div>
