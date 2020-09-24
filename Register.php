@@ -59,16 +59,8 @@
             <input type="text" name="fullname"class="form-control" value="<?php echo $fullname; ?>">
         </div>
         <div class="form-group">
-            <label>Address:<sup>*</sup></label>
-            <input type="text" name="address"class="form-control" value="<?php echo $address; ?>">
-        </div>
-        <div class="form-group">
             <label>Phone:<sup>*</sup></label>
             <input type="text" name="phone"class="form-control" value="<?php echo $phone; ?>">
-        </div>
-        <div class="form-group">
-            <label>VIN:<sup>*</sup></label>
-            <input type="text" name="VIN"class="form-control" value="<?php echo $VIN; ?>">
         </div>
         <p>Already have an account? <a href="login.php">Login here</a>.</p>
         <div class="form-group">
