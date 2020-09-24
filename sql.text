@@ -1,0 +1,74 @@
+CREATE DATABASE IF NOT EXISTS `checkyourcar` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `checkyourcar`;
+
+CREATE TABLE IF NOT EXISTS `user` (
+	  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  	`username` varchar(50) DEFAULT NULL UNIQUE,
+  	`password` varchar(20) DEFAULT NULL,
+  	`email` varchar(100) DEFAULT NULL UNIQUE,
+    `fullname` varchar(100) DEFAULT NULL,
+    `address` varchar(255) DEFAULT NULL,
+    `phone` varchar(10) DEFAULT NULL,
+    `VIN` varchar(17) DEFAULT NULL,
+    CONSTRAINT PK_User PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+INSERT INTO `user`  
+VALUES (1, 'Cecilia', 'cecilia', 'cecilia@email.com','Cecilia N','5 Burwood Street, Burwood VIC 3100',0416107333,'WBAHF52030WW03952');
+
+CREATE TABLE IF NOT EXISTS `make` (
+	`makeID` int(11) NOT NULL AUTO_INCREMENT,
+  	`makeTitle` varchar(50) NOT NULL,
+    CONSTRAINT PK_Make PRIMARY KEY (`makeID`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+INSERT INTO `make`  
+VALUES (1,'Land Rover');
+INSERT INTO `make`  
+VALUES (2,'BMW');
+
+CREATE TABLE IF NOT EXISTS `recall` (
+	  `recallID` int(11) NOT NULL AUTO_INCREMENT,
+  	`recallTitle` varchar(255) NOT NULL,
+  	`startDate` DATE NOT NULL,
+  	`endDate` DATE NOT NULL,
+    `makeID` int(11),
+    CONSTRAINT PK_Recall PRIMARY KEY (`recallID`),
+    CONSTRAINT FK_MakeRecall FOREIGN KEY (`makeID`) REFERENCES `make`(makeID)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+INSERT INTO `recall`  
+VALUES (1,'Jaguar Land Rover — Range Rover Evoque MY2020','2018-10-5','2019-4-4',1);
+INSERT INTO `recall`  
+VALUES (2,'BMW Group Australia Ltd — BMW F90 M5 and F92 M8 MY2019','2019-1-29', '2019-11-7',2);
+
+CREATE TABLE IF NOT EXISTS `model` (
+	  `modelID` int(11) NOT NULL AUTO_INCREMENT,
+  	`modelTitle` varchar(50) NOT NULL,
+    `makeID` int(11),
+    `recallID` int(11), 
+    CONSTRAINT PK_Model PRIMARY KEY (`modelID`),
+    CONSTRAINT FK_RecallModel FOREIGN KEY (`recallID`) REFERENCES `recall`(recallID),
+    CONSTRAINT FK_MakeModel FOREIGN KEY (`makeID`) REFERENCES `make`(makeID)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+INSERT INTO `model`  
+VALUES (1,'MY2020',1,1);
+INSERT INTO `model`  
+VALUES (2,'F90 M5',2,2);
+INSERT INTO `model`  
+VALUES (3,'F92 M8',2,2);
+
+CREATE TABLE IF NOT EXISTS `vehicle` (
+    `vehicleID` int(11) NOT NULL AUTO_INCREMENT,
+	  `VIN` varchar(17) NOT NULL,
+    `modelID` int(11),
+    CONSTRAINT PK_Vehicle PRIMARY KEY (`vehicleID`),
+    CONSTRAINT FK_ModelVehicle FOREIGN KEY (`modelID`) REFERENCES `model`(modelID)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+INSERT INTO `vehicle`  
+VALUES (1,'WBAHF52030WW03952',2);
+INSERT INTO `vehicle`  
+VALUES (2,'WBAHF52030WW03910',2);
+
+
