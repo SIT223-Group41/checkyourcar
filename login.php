@@ -1,3 +1,4 @@
+<?php include('userAccount.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -72,6 +73,4 @@
             <div class="small text-center text-muted">PHUONG THAO NGAN NGUYEN</div>
         </div>
     </footer>
-</body>
-
-</html>
+<?php include('footer.php'); ?>
