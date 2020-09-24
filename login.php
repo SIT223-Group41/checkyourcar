@@ -54,7 +54,7 @@
 
                     </div>
                     <div class="btn btn-primary btn-xl js-scroll-trigger">
-                        <input type="submit" value="Login" class="btn float-right login_btn">
+                        <input name="login_user" type="submit" value="Login" class="btn float-right login_btn">
                     </div>
                     </form>
                 </div>
