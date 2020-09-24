@@ -28,8 +28,13 @@
             </div>
         </div>
     </nav>
-    <h1>Danny Handsome</h1>
-    <p>Giúp tôi đi các bạn trẻ</p>
+    <div class="container">
+            <div class="small text-center text-muted">Group Members:</div>
+            <div class="small text-center text-muted">VU THANH XUAN NGUYEN</div>
+            <div class="small text-center text-muted">QUOC VIET NGU NGUYEN</div>
+            <div class="small text-center text-muted">TAN TAI NGUYEN</div>
+            <div class="small text-center text-muted">PHUONG THAO NGAN NGUYEN</div>
+        </div>
 
 </body>
 <footer class="bg-light py-5">
