@@ -73,7 +73,7 @@
         <p>Already have an account? <a href="login.php">Login here</a>.</p>
         <div class="form-group">
             <button type="submit" class="btn btn-primary" name="register_user">Register</button>
-            <input type="reset" onclick="window,location='register.php'" class="btn btn-default" value="Reset">
+            <input type="reset" onclick="window,location='Register.php'" class="btn btn-default" value="Reset">
 
         </div>
                 <div class="col-lg-8 align-self-baseline">
