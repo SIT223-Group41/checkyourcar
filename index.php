@@ -59,9 +59,9 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2 class="text-white mt-0">Text</h2>
+                    <h2 class="text-white mt-0">Get ready for new innovations</h2>
                     <hr class="divider light my-4" />
-                    <p class="text-white-50 mb-4">Text</p>
+                    <p class="text-white-50 mb-4">We strive to ensure you receive updates on your vehicle and recalls that concern you, using a safe, clear and up-to-date system.</p>
                     <a class="btn btn-light btn-xl js-scroll-trigger" href="login.php">Get Started!</a>
                 </div>
             </div>
