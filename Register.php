@@ -83,13 +83,8 @@
     </header>
     <footer class="bg-light py-5">
         <div class="container">
-            <div class="small text-center text-muted">Group Members:</div>
-            <div class="small text-center text-muted">VU THANH XUAN NGUYEN</div>
-            <div class="small text-center text-muted">QUOC VIET NGU NGUYEN</div>
-            <div class="small text-center text-muted">VIET HUY THAI</div>
-            <div class="small text-center text-muted">TAN TAI NGUYEN</div>
-            <div class="small text-center text-muted">PHUONG THAO NGAN NGUYEN</div>
+            <p>&copy;<?php echo date("Y"); ?> Check Your Car</p>
         </div>
     </footer>
 
-<?php include('footer.php'); ?>
+
