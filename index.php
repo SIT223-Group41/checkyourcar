@@ -48,7 +48,7 @@
                     <hr class="divider my-4" />
                 </div>
                 <div class="col-lg-8 align-self-baseline">
-                    <p class="text-white-75 font-weight-light mb-5">Register your vehicle to be notified about updates to recalls affecting you!</p>
+                    <p class="text-white-75 font-weight-light mb-5">Please register your vehicle for the latest updates on your information!</p>
                     <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
                 </div>
             </div>
@@ -69,12 +69,7 @@
     </section>
     <footer class="bg-light py-5">
         <div class="container">
-            <div class="small text-center text-muted">Group Members:</div>
-            <div class="small text-center text-muted">VU THANH XUAN NGUYEN</div>
-            <div class="small text-center text-muted">QUOC VIET NGU NGUYEN</div>
-            <div class="small text-center text-muted">VIET HUY THAI</div>
-            <div class="small text-center text-muted">TAN TAI NGUYEN</div>
-            <div class="small text-center text-muted">PHUONG THAO NGAN NGUYEN</div>
+            <p>&copy;<?php echo date("Y"); ?> Check Your Car</p>
         </div>
     </footer>
 
