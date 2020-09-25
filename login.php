@@ -68,4 +68,5 @@
             <p>&copy;<?php echo date("Y"); ?> Check Your Car</p>
         </div>
     </footer>
-<?php include('footer.php'); ?>
+    </body>
+</html>
