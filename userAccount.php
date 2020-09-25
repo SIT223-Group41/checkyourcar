@@ -71,7 +71,7 @@ if (isset($_POST['register_user'])) {
         VALUES ('$username', '$password','$email','$fullname','$address','$phone','$VIN')";
 		mysqli_query($mysqli, $query);
 		$_SESSION['username'] = $username;
-		header('location: home.php');
+		header('location: index.php');
 	}
 
 }
@@ -96,7 +96,7 @@ if (isset($_POST['login_user'])) {
 		$results = mysqli_query($mysqli, $query);
 		if (mysqli_num_rows($results) == 1) {
 			$_SESSION['username'] = $username;
-            header('location: home.php');
+            header('location: index.php');
 		} else {
 			array_push($errors, "Invalid username and/or password");
 		}
