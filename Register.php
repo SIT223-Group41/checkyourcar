@@ -36,7 +36,7 @@
                     <h1 class="text-uppercase text-white font-weight-bold">Register now!</h1>
                     <hr class="divider my-4" />
                 </div>
-                <form action="register.php" method="post">
+                <form action="Register.php" method="post">
         <?php include('error.php') ?>
         <div class="form-group">
             <label>Username:<sup>*</sup></label>
