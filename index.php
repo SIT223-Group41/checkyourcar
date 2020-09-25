@@ -22,7 +22,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="about.php">ABOUT</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Register.php">REGISTER</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="login.php">LOGIN</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="recall.php">SEARCH</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="search_recall.php">SEARCH</a></li>
                 </ul>
             </div>
         </div>
@@ -36,27 +36,14 @@
                     <hr class="divider my-4" />
                 </div>
                 <div class="col-lg-8 align-self-baseline">
-                    <p class="text-white-75 font-weight-light mb-5">Please register your vehicle for the latest updates on your information!</p>
+                    <p class="text-white-75 font-weight-light mb-5">Register your vehicle to be notified about updates to recalls affecting you!</p>
                     <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
                 </div>
             </div>
         </div>
     </header>
-   
+
     <section class="page-section bg-primary" id="about">
-         <div class="wrapper">
-    <h2>Search</h2>
-    <form action="index.php" method="post">
-        <div class="form-group">            
-            <input type="text" name="input" class="form-control">
-            <button type="submit" class="btn btn-primary" name="search"><i class="fa fa-search"></i></button>
-
-        </div>
-
-        
-    </form>
-    <?php include('functions.php') ?>
-</div>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
@@ -65,18 +52,32 @@
                     <p class="text-white-50 mb-4">We strive to ensure you receive updates on your vehicle and recalls that concern you, using a safe, clear and up-to-date system.</p>
                     <a class="btn btn-light btn-xl js-scroll-trigger" href="login.php">Get Started!</a>
                 </div>
+                <div class="wrapper">
+            <h2>Search</h2>
+            <form action="index.php" method="post">
+            <div class="form-group">            
+            <input type="text" name="input" class="form-control">
+            <button type="submit" class="btn btn-primary" name="search"><i class="fa fa-search"></i></button>
+
+            </div>
+
+        
+            </form>
+            <?php include('functions.php') ?>
+    
+        </div>
             </div>
         </div>
     </section>
     <footer class="bg-light py-5">
         <div class="container">
-            <p>&copy;<?php echo date("Y"); ?> Check Your Car</p>
+        <p>&copy;<?php echo date("Y"); ?> Check Your Car</p>
         </div>
     </footer>
 
+</body>
+<?php include('functions.php') ?>
 
+<?php include('footer.php'); ?>
 
-    </body>
 </html>
-
-
