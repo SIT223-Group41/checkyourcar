@@ -22,24 +22,12 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="about.php">ABOUT</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Register.php">REGISTER</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="login.php">LOGIN</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="search_recall.php">SEARCH</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="recall.php">SEARCH</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="wrapper">
-    <h2>Search</h2>
-    <form action="index.php" method="post">
-        <div class="form-group">            
-            <input type="text" name="input" class="form-control">
-            <button type="submit" class="btn btn-primary" name="search"><i class="fa fa-search"></i></button>
-
-        </div>
-
-        
-    </form>
     
-</div>
     <header class="masthead">
         <div class="container h-100">
             <div class="row h-100 align-items-center justify-content-center text-center">
