@@ -42,7 +42,9 @@
             </div>
         </div>
     </header>
-    <div class="wrapper">
+   
+    <section class="page-section bg-primary" id="about">
+         <div class="wrapper">
     <h2>Search</h2>
     <form action="index.php" method="post">
         <div class="form-group">            
@@ -53,9 +55,8 @@
 
         
     </form>
-    
+    <?php include('functions.php') ?>
 </div>
-    <section class="page-section bg-primary" id="about">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
@@ -74,8 +75,8 @@
     </footer>
 
 
-<?php include('functions.php') ?>
 
-<?php include('footer.php'); ?>
+    </body>
+</html>
 
 
