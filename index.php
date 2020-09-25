@@ -42,7 +42,19 @@
             </div>
         </div>
     </header>
+    <div class="wrapper">
+    <h2>Search</h2>
+    <form action="index.php" method="post">
+        <div class="form-group">            
+            <input type="text" name="input" class="form-control">
+            <button type="submit" class="btn btn-primary" name="search"><i class="fa fa-search"></i></button>
 
+        </div>
+
+        
+    </form>
+    
+</div>
     <section class="page-section bg-primary" id="about">
         <div class="container">
             <div class="row justify-content-center">
